@@ -1,2 +1,2 @@
-# RxSwift-MVVM_base
-RxSwiftを用いたMVVMでのベース実装
+# mimi
+録音アプリ
