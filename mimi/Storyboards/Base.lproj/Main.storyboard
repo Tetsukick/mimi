@@ -93,13 +93,111 @@
                     <navigationItem key="navigationItem" title="TOP" id="Jjt-PX-Ljl">
                         <barButtonItem key="rightBarButtonItem" systemItem="edit" id="B5W-Vn-E9y"/>
                     </navigationItem>
+                    <connections>
+                        <segue destination="hXN-Vp-9j9" kind="show" identifier="" id="ZZF-OH-eMZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-484" y="124.58770614692655"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="PLe-hg-xPg">
+            <objects>
+                <viewController id="hXN-Vp-9j9" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Nrg-Yt-HCA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OdD-s5-iMr">
+                                <rect key="frame" x="0.0" y="583.5" width="375" height="83.5"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8ub-eG-Qbh">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="0.5"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="0.5" id="id4-Tg-GVu"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="5AT-uP-Pj3">
+                                        <rect key="frame" x="60" y="0.5" width="255" height="83"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n53-ra-4cO">
+                                                <rect key="frame" x="0.0" y="22.5" width="38" height="38"/>
+                                                <state key="normal" image="trash_btn"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gXS-u6-yg7">
+                                                <rect key="frame" x="100" y="14" width="55" height="55"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="gXS-u6-yg7" secondAttribute="height" multiplier="1:1" id="ia9-g5-mo8"/>
+                                                </constraints>
+                                                <state key="normal" image="start_btn"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="axk-Bv-E9o">
+                                                <rect key="frame" x="217" y="22.5" width="38" height="38"/>
+                                                <state key="normal" image="finish_btn"/>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="gXS-u6-yg7" firstAttribute="height" secondItem="5AT-uP-Pj3" secondAttribute="height" multiplier="2:3" id="x61-Uu-1Z9"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="8ub-eG-Qbh" firstAttribute="leading" secondItem="OdD-s5-iMr" secondAttribute="leading" id="039-Ob-xiD"/>
+                                    <constraint firstAttribute="trailing" secondItem="5AT-uP-Pj3" secondAttribute="trailing" constant="60" id="V2J-B6-EHJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="8ub-eG-Qbh" secondAttribute="trailing" id="ebz-eb-w1B"/>
+                                    <constraint firstItem="8ub-eG-Qbh" firstAttribute="top" secondItem="OdD-s5-iMr" secondAttribute="top" id="fon-o7-fdg"/>
+                                    <constraint firstItem="5AT-uP-Pj3" firstAttribute="top" secondItem="8ub-eG-Qbh" secondAttribute="bottom" id="hcG-Id-Wbw"/>
+                                    <constraint firstItem="5AT-uP-Pj3" firstAttribute="leading" secondItem="OdD-s5-iMr" secondAttribute="leading" constant="60" id="lP7-a6-6aV"/>
+                                    <constraint firstAttribute="bottom" secondItem="5AT-uP-Pj3" secondAttribute="bottom" id="pn7-Xf-XV0"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="yQO-gG-v7b">
+                                <rect key="frame" x="50" y="283.5" width="275" height="100.5"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uV3-7J-lww">
+                                        <rect key="frame" x="30" y="0.0" width="215" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fc2-dW-46w">
+                                        <rect key="frame" x="116.5" y="80" width="42" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="uV3-7J-lww" secondAttribute="trailing" constant="30" id="aKg-vt-zfF"/>
+                                    <constraint firstItem="uV3-7J-lww" firstAttribute="leading" secondItem="yQO-gG-v7b" secondAttribute="leading" constant="30" id="hkJ-7S-28T"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="OdD-s5-iMr" firstAttribute="leading" secondItem="J6c-QB-YBB" secondAttribute="leading" id="3lU-uu-rER"/>
+                            <constraint firstItem="yQO-gG-v7b" firstAttribute="centerX" secondItem="Nrg-Yt-HCA" secondAttribute="centerX" id="8ha-jy-PA1"/>
+                            <constraint firstItem="J6c-QB-YBB" firstAttribute="trailing" secondItem="yQO-gG-v7b" secondAttribute="trailing" constant="50" id="Fcr-Cc-VcY"/>
+                            <constraint firstItem="OdD-s5-iMr" firstAttribute="trailing" secondItem="J6c-QB-YBB" secondAttribute="trailing" id="Gaa-m3-HqY"/>
+                            <constraint firstItem="yQO-gG-v7b" firstAttribute="centerY" secondItem="Nrg-Yt-HCA" secondAttribute="centerY" id="SIl-AE-wcs"/>
+                            <constraint firstItem="OdD-s5-iMr" firstAttribute="height" secondItem="Nrg-Yt-HCA" secondAttribute="height" multiplier="1:8" id="f0l-iX-7r6"/>
+                            <constraint firstItem="yQO-gG-v7b" firstAttribute="leading" secondItem="J6c-QB-YBB" secondAttribute="leading" constant="50" id="pSL-nl-rej"/>
+                            <constraint firstItem="J6c-QB-YBB" firstAttribute="bottom" secondItem="OdD-s5-iMr" secondAttribute="bottom" id="tkR-AB-xdc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="J6c-QB-YBB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l4U-5y-4on" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="524" y="125"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="finish_btn" width="38" height="38"/>
         <image name="start_btn" width="80" height="80"/>
+        <image name="trash_btn" width="38" height="38"/>
     </resources>
 </document>
