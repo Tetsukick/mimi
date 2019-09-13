@@ -17,6 +17,9 @@
 		97C99DFB232B16B500481374 /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C99DFA232B16B500481374 /* TopViewController.swift */; };
 		97C99DFD232B16ED00481374 /* TopViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C99DFC232B16ED00481374 /* TopViewModal.swift */; };
 		97C99DFF232B174E00481374 /* TopModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C99DFE232B174E00481374 /* TopModel.swift */; };
+		97C99E01232B18C100481374 /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C99E00232B18C100481374 /* RecordViewController.swift */; };
+		97C99E03232B18F700481374 /* RecordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C99E02232B18F700481374 /* RecordViewModel.swift */; };
+		97C99E05232B198B00481374 /* RecordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C99E04232B198B00481374 /* RecordModel.swift */; };
 		C9106DAF1F6942D80044CF96 /* Storyboadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9106DAE1F6942D80044CF96 /* Storyboadable.swift */; };
 		C9106DB11F6943080044CF96 /* Nibable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9106DB01F6943080044CF96 /* Nibable.swift */; };
 		C9106DB31F69436D0044CF96 /* UITableView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9106DB21F69436D0044CF96 /* UITableView+.swift */; };
@@ -61,6 +64,9 @@
 		97C99DFA232B16B500481374 /* TopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
 		97C99DFC232B16ED00481374 /* TopViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopViewModal.swift; sourceTree = "<group>"; };
 		97C99DFE232B174E00481374 /* TopModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopModel.swift; sourceTree = "<group>"; };
+		97C99E00232B18C100481374 /* RecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
+		97C99E02232B18F700481374 /* RecordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewModel.swift; sourceTree = "<group>"; };
+		97C99E04232B198B00481374 /* RecordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordModel.swift; sourceTree = "<group>"; };
 		C9106DAE1F6942D80044CF96 /* Storyboadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboadable.swift; sourceTree = "<group>"; };
 		C9106DB01F6943080044CF96 /* Nibable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nibable.swift; sourceTree = "<group>"; };
 		C9106DB21F69436D0044CF96 /* UITableView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+.swift"; sourceTree = "<group>"; };
@@ -247,6 +253,7 @@
 			children = (
 				C9765E151F67E2E500FAEC9D /* SampleModel.swift */,
 				97C99DFE232B174E00481374 /* TopModel.swift */,
+				97C99E04232B198B00481374 /* RecordModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -256,6 +263,7 @@
 			children = (
 				C9765E1A1F67E3E900FAEC9D /* SampleViewModel.swift */,
 				97C99DFC232B16ED00481374 /* TopViewModal.swift */,
+				97C99E02232B18F700481374 /* RecordViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -273,6 +281,7 @@
 			children = (
 				C9765E1C1F67E41D00FAEC9D /* SampleViewController.swift */,
 				97C99DFA232B16B500481374 /* TopViewController.swift */,
+				97C99E00232B18C100481374 /* RecordViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -425,6 +434,7 @@
 				C946E0581F67D9670041C361 /* UIViewController+.swift in Sources */,
 				C946E0561F67D9670041C361 /* UIColor+.swift in Sources */,
 				97B96962230DA96B009086A8 /* UIWindow+.swift in Sources */,
+				97C99E05232B198B00481374 /* RecordModel.swift in Sources */,
 				97B96961230DA96B009086A8 /* UIDevice+.swift in Sources */,
 				97B9695A230DA877009086A8 /* Collection+.swift in Sources */,
 				97C99DFB232B16B500481374 /* TopViewController.swift in Sources */,
@@ -432,7 +442,9 @@
 				C946E0491F67D6BE0041C361 /* Util.swift in Sources */,
 				C9765E211F67E52900FAEC9D /* UIImage+.swift in Sources */,
 				C9765E251F67E5AE00FAEC9D /* PickerTextField.swift in Sources */,
+				97C99E03232B18F700481374 /* RecordViewModel.swift in Sources */,
 				C946E0321F67C7C70041C361 /* AppDelegate.swift in Sources */,
+				97C99E01232B18C100481374 /* RecordViewController.swift in Sources */,
 				C946E04B1F67D6C80041C361 /* Constants.swift in Sources */,
 				C946E0541F67D9670041C361 /* RxSwift+FilterNil.swift in Sources */,
 			);
