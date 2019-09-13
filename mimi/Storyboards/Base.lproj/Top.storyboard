@@ -29,7 +29,7 @@
         <!--TOP-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="mimi" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="TopViewController" customModule="mimi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -94,17 +94,17 @@
                         <barButtonItem key="rightBarButtonItem" systemItem="edit" id="B5W-Vn-E9y"/>
                     </navigationItem>
                     <connections>
-                        <segue destination="hXN-Vp-9j9" kind="show" identifier="" id="ZZF-OH-eMZ"/>
+                        <segue destination="hXN-Vp-9j9" kind="show" identifier="showRecordView" id="ZZF-OH-eMZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-484" y="124.58770614692655"/>
         </scene>
-        <!--View Controller-->
+        <!--Record View Controller-->
         <scene sceneID="PLe-hg-xPg">
             <objects>
-                <viewController id="hXN-Vp-9j9" sceneMemberID="viewController">
+                <viewController id="hXN-Vp-9j9" customClass="RecordViewController" customModule="mimi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Nrg-Yt-HCA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
