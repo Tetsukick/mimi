@@ -13,6 +13,7 @@
 		97B9695E230DA8BC009086A8 /* UICollectionViewCell+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B9695C230DA8BB009086A8 /* UICollectionViewCell+.swift */; };
 		97B96961230DA96B009086A8 /* UIDevice+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B9695F230DA96B009086A8 /* UIDevice+.swift */; };
 		97B96962230DA96B009086A8 /* UIWindow+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B96960230DA96B009086A8 /* UIWindow+.swift */; };
+		97C99DF9232B14AD00481374 /* IBAnimatable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97C99DF8232B14AD00481374 /* IBAnimatable.framework */; };
 		C9106DAF1F6942D80044CF96 /* Storyboadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9106DAE1F6942D80044CF96 /* Storyboadable.swift */; };
 		C9106DB11F6943080044CF96 /* Nibable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9106DB01F6943080044CF96 /* Nibable.swift */; };
 		C9106DB31F69436D0044CF96 /* UITableView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9106DB21F69436D0044CF96 /* UITableView+.swift */; };
@@ -53,6 +54,7 @@
 		97B9695C230DA8BB009086A8 /* UICollectionViewCell+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+.swift"; sourceTree = "<group>"; };
 		97B9695F230DA96B009086A8 /* UIDevice+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDevice+.swift"; sourceTree = "<group>"; };
 		97B96960230DA96B009086A8 /* UIWindow+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIWindow+.swift"; sourceTree = "<group>"; };
+		97C99DF8232B14AD00481374 /* IBAnimatable.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IBAnimatable.framework; path = Carthage/Build/iOS/IBAnimatable.framework; sourceTree = "<group>"; };
 		C9106DAE1F6942D80044CF96 /* Storyboadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboadable.swift; sourceTree = "<group>"; };
 		C9106DB01F6943080044CF96 /* Nibable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nibable.swift; sourceTree = "<group>"; };
 		C9106DB21F69436D0044CF96 /* UITableView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+.swift"; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97C99DF9232B14AD00481374 /* IBAnimatable.framework in Frameworks */,
 				C9765E3F1F6804A300FAEC9D /* SwiftyJSON.framework in Frameworks */,
 				C9765E3D1F68048E00FAEC9D /* SVProgressHUD.framework in Frameworks */,
 				C9765E3B1F68047100FAEC9D /* RxSwift.framework in Frameworks */,
@@ -284,6 +287,7 @@
 		C9765E311F68042300FAEC9D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				97C99DF8232B14AD00481374 /* IBAnimatable.framework */,
 				C9765E3E1F6804A300FAEC9D /* SwiftyJSON.framework */,
 				C9765E3C1F68048E00FAEC9D /* SVProgressHUD.framework */,
 				C9765E3A1F68047100FAEC9D /* RxSwift.framework */,
@@ -377,12 +381,13 @@
 				"$(SRCROOT)/Carthage/Build/iOS/RxBlocking.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/IBAnimatable.framework",
 			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks\n\nKEYWORDS=\"WARN:\"\nfind ${SRCROOT} \\( -name \"*.h\" -or -name \"*.m\" -or -name \"*.swift\" \\) -print0 | \\\nxargs -0 egrep --with-filename --line-number --only-matching \"($KEYWORDS).*\\$\" | \\\nperl -p -e \"s/($KEYWORDS)/ warning: \\$1/\"";
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n\nKEYWORDS=\"WARN:\"\nfind ${SRCROOT} \\( -name \"*.h\" -or -name \"*.m\" -or -name \"*.swift\" \\) -print0 | \\\nxargs -0 egrep --with-filename --line-number --only-matching \"($KEYWORDS).*\\$\" | \\\nperl -p -e \"s/($KEYWORDS)/ warning: \\$1/\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -560,12 +565,12 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = base/Info.plist;
+				INFOPLIST_FILE = mimi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.teppei.kikuchi.mimi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -580,12 +585,12 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = base/Info.plist;
+				INFOPLIST_FILE = mimi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.teppei.kikuchi.mimi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
