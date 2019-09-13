@@ -14,6 +14,9 @@
 		97B96961230DA96B009086A8 /* UIDevice+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B9695F230DA96B009086A8 /* UIDevice+.swift */; };
 		97B96962230DA96B009086A8 /* UIWindow+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B96960230DA96B009086A8 /* UIWindow+.swift */; };
 		97C99DF9232B14AD00481374 /* IBAnimatable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97C99DF8232B14AD00481374 /* IBAnimatable.framework */; };
+		97C99DFB232B16B500481374 /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C99DFA232B16B500481374 /* TopViewController.swift */; };
+		97C99DFD232B16ED00481374 /* TopViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C99DFC232B16ED00481374 /* TopViewModal.swift */; };
+		97C99DFF232B174E00481374 /* TopModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C99DFE232B174E00481374 /* TopModel.swift */; };
 		C9106DAF1F6942D80044CF96 /* Storyboadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9106DAE1F6942D80044CF96 /* Storyboadable.swift */; };
 		C9106DB11F6943080044CF96 /* Nibable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9106DB01F6943080044CF96 /* Nibable.swift */; };
 		C9106DB31F69436D0044CF96 /* UITableView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9106DB21F69436D0044CF96 /* UITableView+.swift */; };
@@ -55,6 +58,9 @@
 		97B9695F230DA96B009086A8 /* UIDevice+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDevice+.swift"; sourceTree = "<group>"; };
 		97B96960230DA96B009086A8 /* UIWindow+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIWindow+.swift"; sourceTree = "<group>"; };
 		97C99DF8232B14AD00481374 /* IBAnimatable.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IBAnimatable.framework; path = Carthage/Build/iOS/IBAnimatable.framework; sourceTree = "<group>"; };
+		97C99DFA232B16B500481374 /* TopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
+		97C99DFC232B16ED00481374 /* TopViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopViewModal.swift; sourceTree = "<group>"; };
+		97C99DFE232B174E00481374 /* TopModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopModel.swift; sourceTree = "<group>"; };
 		C9106DAE1F6942D80044CF96 /* Storyboadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboadable.swift; sourceTree = "<group>"; };
 		C9106DB01F6943080044CF96 /* Nibable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nibable.swift; sourceTree = "<group>"; };
 		C9106DB21F69436D0044CF96 /* UITableView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+.swift"; sourceTree = "<group>"; };
@@ -240,6 +246,7 @@
 			isa = PBXGroup;
 			children = (
 				C9765E151F67E2E500FAEC9D /* SampleModel.swift */,
+				97C99DFE232B174E00481374 /* TopModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -248,6 +255,7 @@
 			isa = PBXGroup;
 			children = (
 				C9765E1A1F67E3E900FAEC9D /* SampleViewModel.swift */,
+				97C99DFC232B16ED00481374 /* TopViewModal.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -264,6 +272,7 @@
 			isa = PBXGroup;
 			children = (
 				C9765E1C1F67E41D00FAEC9D /* SampleViewController.swift */,
+				97C99DFA232B16B500481374 /* TopViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -408,6 +417,8 @@
 				C9765E271F67E5CE00FAEC9D /* UITextField.swift in Sources */,
 				C9765E1D1F67E41D00FAEC9D /* SampleViewController.swift in Sources */,
 				97B9695D230DA8BC009086A8 /* UICollectionView+.swift in Sources */,
+				97C99DFD232B16ED00481374 /* TopViewModal.swift in Sources */,
+				97C99DFF232B174E00481374 /* TopModel.swift in Sources */,
 				C9106DAF1F6942D80044CF96 /* Storyboadable.swift in Sources */,
 				C9106DB11F6943080044CF96 /* Nibable.swift in Sources */,
 				C9765E161F67E2E500FAEC9D /* SampleModel.swift in Sources */,
@@ -416,6 +427,7 @@
 				97B96962230DA96B009086A8 /* UIWindow+.swift in Sources */,
 				97B96961230DA96B009086A8 /* UIDevice+.swift in Sources */,
 				97B9695A230DA877009086A8 /* Collection+.swift in Sources */,
+				97C99DFB232B16B500481374 /* TopViewController.swift in Sources */,
 				C946E0531F67D9670041C361 /* Dictionary+.swift in Sources */,
 				C946E0491F67D6BE0041C361 /* Util.swift in Sources */,
 				C9765E211F67E52900FAEC9D /* UIImage+.swift in Sources */,
