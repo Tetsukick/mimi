@@ -89,7 +89,7 @@ final class RecordViewController : UIViewController, AVAudioRecorderDelegate, AV
     
     func record() {
         
-        if let recorder = audioRecorder, recorder.isRecording {
+        if let recorder = audioRecorder {
             recorder.record()
         } else {
             let session = AVAudioSession.sharedInstance()
