@@ -20,6 +20,8 @@
 		97C99E01232B18C100481374 /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C99E00232B18C100481374 /* RecordViewController.swift */; };
 		97C99E03232B18F700481374 /* RecordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C99E02232B18F700481374 /* RecordViewModel.swift */; };
 		97C99E05232B198B00481374 /* RecordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C99E04232B198B00481374 /* RecordModel.swift */; };
+		97EC0628233D17B300EDEB4A /* RxRelay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97EC0627233D17B300EDEB4A /* RxRelay.framework */; };
+		97EC0629233D17B300EDEB4A /* RxRelay.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 97EC0627233D17B300EDEB4A /* RxRelay.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C9106DAF1F6942D80044CF96 /* Storyboadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9106DAE1F6942D80044CF96 /* Storyboadable.swift */; };
 		C9106DB11F6943080044CF96 /* Nibable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9106DB01F6943080044CF96 /* Nibable.swift */; };
 		C9106DB31F69436D0044CF96 /* UITableView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9106DB21F69436D0044CF96 /* UITableView+.swift */; };
@@ -53,6 +55,20 @@
 		C9765E3F1F6804A300FAEC9D /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9765E3E1F6804A300FAEC9D /* SwiftyJSON.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		97EC062A233D17B400EDEB4A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				97EC0629233D17B300EDEB4A /* RxRelay.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		97B96957230DA877009086A8 /* Array+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+.swift"; sourceTree = "<group>"; };
 		97B96958230DA877009086A8 /* Collection+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Collection+.swift"; sourceTree = "<group>"; };
@@ -67,6 +83,7 @@
 		97C99E00232B18C100481374 /* RecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
 		97C99E02232B18F700481374 /* RecordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewModel.swift; sourceTree = "<group>"; };
 		97C99E04232B198B00481374 /* RecordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordModel.swift; sourceTree = "<group>"; };
+		97EC0627233D17B300EDEB4A /* RxRelay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxRelay.framework; path = Carthage/Build/iOS/RxRelay.framework; sourceTree = "<group>"; };
 		C9106DAE1F6942D80044CF96 /* Storyboadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboadable.swift; sourceTree = "<group>"; };
 		C9106DB01F6943080044CF96 /* Nibable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nibable.swift; sourceTree = "<group>"; };
 		C9106DB21F69436D0044CF96 /* UITableView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+.swift"; sourceTree = "<group>"; };
@@ -109,6 +126,7 @@
 			files = (
 				97C99DF9232B14AD00481374 /* IBAnimatable.framework in Frameworks */,
 				C9765E3F1F6804A300FAEC9D /* SwiftyJSON.framework in Frameworks */,
+				97EC0628233D17B300EDEB4A /* RxRelay.framework in Frameworks */,
 				C9765E3D1F68048E00FAEC9D /* SVProgressHUD.framework in Frameworks */,
 				C9765E3B1F68047100FAEC9D /* RxSwift.framework in Frameworks */,
 				C9765E391F68046000FAEC9D /* RxCocoa.framework in Frameworks */,
@@ -305,6 +323,7 @@
 		C9765E311F68042300FAEC9D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				97EC0627233D17B300EDEB4A /* RxRelay.framework */,
 				97C99DF8232B14AD00481374 /* IBAnimatable.framework */,
 				C9765E3E1F6804A300FAEC9D /* SwiftyJSON.framework */,
 				C9765E3C1F68048E00FAEC9D /* SVProgressHUD.framework */,
@@ -328,6 +347,7 @@
 				C946E02B1F67C7C70041C361 /* Frameworks */,
 				C946E02C1F67C7C70041C361 /* Resources */,
 				C9D24F611F680D2800F22A91 /* ShellScript */,
+				97EC062A233D17B400EDEB4A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
