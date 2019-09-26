@@ -131,10 +131,16 @@
                                                     <constraint firstAttribute="width" secondItem="gXS-u6-yg7" secondAttribute="height" multiplier="1:1" id="ia9-g5-mo8"/>
                                                 </constraints>
                                                 <state key="normal" image="start_btn"/>
+                                                <connections>
+                                                    <action selector="tappedStartPauseButton:" destination="hXN-Vp-9j9" eventType="touchUpInside" id="HtP-YC-tBI"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="axk-Bv-E9o">
                                                 <rect key="frame" x="217" y="22.5" width="38" height="38"/>
                                                 <state key="normal" image="finish_btn"/>
+                                                <connections>
+                                                    <action selector="tappedStopButton:" destination="hXN-Vp-9j9" eventType="touchUpInside" id="zNt-TG-3Ao"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -187,6 +193,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="J6c-QB-YBB"/>
                     </view>
+                    <connections>
+                        <outlet property="startPauseButton" destination="gXS-u6-yg7" id="d37-Qq-hBp"/>
+                        <outlet property="stopButton" destination="axk-Bv-E9o" id="bJh-sG-hSE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l4U-5y-4on" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
