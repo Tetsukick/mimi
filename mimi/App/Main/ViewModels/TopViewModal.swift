@@ -1,8 +1,9 @@
 import RxSwift
 
 protocol TopViewModelInputs {
+    var pressedRecordStartButton: PublishSubject<Void> { get }
+    
     /* viewからのアクションを定義する
-     var pressedCloseButton: PublishSubject<Void> { get }
      func request(param: Int)
      func doSomething()
      */
@@ -27,7 +28,7 @@ final class TopViewModel: TopViewModelType, TopViewModelInputs, TopViewModelOutp
     var inputs: TopViewModelInputs { return self }
     var outputs: TopViewModelOutputs { return self }
     
-    //    let pressedButton = PublishSubject<Void>()
+    let pressedRecordStartButton = PublishSubject<Void>()
     
     init() {
         /* Modelからの処理結果を受け取り、view側へ通知する

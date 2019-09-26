@@ -7,26 +7,28 @@ final class TopViewController : UIViewController {
     private let viewModel: TopViewModelType = TopViewModel()
     private let disposeBag = DisposeBag()
     
+    @IBOutlet weak var recordStartButton: UIButton!
+    
+    private let segueIdentifierShowRecordView = "showRecordView"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        /* UI部品と紐付ける（例：ボタンとpressedButtonを結びつける）
-         button
-         .rx
-         .tap
-         .bind(to: viewModel.inputs.pressedButton)
-         .disposed(by: disposeBag)
-         */
+        recordStartButton
+            .rx
+            .tap
+            .bind(to: viewModel.inputs.pressedRecordStartButton)
+            .disposed(by: disposeBag)
         
         // inputs
-        /* view のアクションをviewModelに通知
-         viewModel.inputs.pressedButton
-         .subscribe(onNext: { [weak self]  _ in
-         guard let strongSelf = self else { fatalError() }
-         strongSelf.viewModel.inputs.request(param: x)
-         })
-         .disposed(by: disposeBag)
+        viewModel.inputs.pressedRecordStartButton
+            .subscribe(onNext: { [weak self]  _ in
+                    guard let strongSelf = self else { fatalError() }
+                    strongSelf.performSegue(withIdentifier: strongSelf.segueIdentifierShowRecordView, sender: nil)
+                })
+            .disposed(by: disposeBag)
          
+        /* view のアクションをviewModelに通知
          viewModel.inputs.doSomething()
          */
         
